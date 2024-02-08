@@ -31,7 +31,10 @@ Steps taken: (the step numbers are just there to provide the steps and don't hav
 20) entering "scrapy crawl spider -o laptops.json" from the terminal, and data will both be exported as a .json file + imported into MySQL
 
 Optional:
-install selector gadget for chrome
+1) install selector gadget for chrome
+2) Set logs level to display output for only warnings from terminal:
+
+   ```scrapy crawl spider -L WARNING```
 
 > [!NOTE]
 >
