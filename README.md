@@ -27,13 +27,15 @@ Steps taken: (the step numbers are just there to provide the steps and don't hav
         - ```>>> fetch('https://www.centralcomputer.com/all-products/computers/laptops/laptops.html?p=1')```
    - verify the response's values:
         - ```response.css('a.product-item-link::text').extract()```
-15) try crawling again "scrapy crawl spider" from terminal then extract to .json file
-16) uncomment ITEM_PIPELINES in "settings.py, the default number 300 in ITEM_PIPELINES is the priority, lower number = higher priority
-17) enter "pip install mysql-connector-python" from terminal 
-18) download and set up a local MySQL database then create a schema
-19) in "pipeline.py", import mysql.connector (if not using mysql, you could use the built-in sqlite3)
-20) then in "pipeline.py", define methods to manipulate the database using SQL statements
-21) entering "scrapy crawl spider -o laptops.json" from the terminal, and data will both be exported as a .json file + imported into MySQL
+15) try crawling again and export extracted data as a .json file "scrapy crawl spider -o laptops.json" from terminal
+
+Additional steps if exporting extracted data into a local MySQL database:
+1) uncomment ITEM_PIPELINES in "settings.py, the default number 300 in ITEM_PIPELINES is the priority, lower number = higher priority
+2) enter "pip install mysql-connector-python" from terminal
+3) download and set up a local MySQL database then create a schema
+4) in "pipeline.py", import mysql.connector (if not using mysql, you could use the built-in sqlite3)
+5) then in "pipeline.py", define methods to manipulate the database using SQL statements
+6) entering "scrapy crawl spider -o laptops.json" from the terminal, and data will both be exported as a .json file + imported into MySQL
 
 Optional:
 1) install selector gadget for chrome
