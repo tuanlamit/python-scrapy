@@ -2,7 +2,7 @@
 
 This project was created and executed on Windows.
 
-<u>**Steps taken: (the steps are not strictly in order)**</u>
+**<u>Steps taken: (the steps are not strictly in order)</u>**
 
 1) create an empty folder and cd into it
 2) create venv "python -m venv venv" from terminal
