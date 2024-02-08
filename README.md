@@ -4,7 +4,7 @@ This project was created and executed on Windows.
 
 Steps taken: (the step numbers are just there to provide the steps and don't have to be completed in order)
 
-1) create an empty folder and cd into it 
+1) create an empty folder and cd into it
 2) create venv "python -m venv venv" from terminal
 3) activate venv ".\venv\Scripts\activate" from terminal
 4) upgrade pip "python.exe -m pip install --upgrade pip" from terminal
@@ -17,7 +17,7 @@ Steps taken: (the step numbers are just there to provide the steps and don't hav
    - "spiders" folder: our spider.py created earlier is located here
    - "items.py": temporarily stores extracted data (automatically created by scrapy, we need to create items here)
    - "pipelines.py" specifies where to store extracted data (automatically created by scrapy, add database info here if exporting extracted data to a database)
-   - "middlewares.py" does something with the returned data or send other stuff along with the request (automatically created by scrapy, needs modification)
+   - "middlewares.py" does something with the returned data or send other stuff along with the request (automatically created by scrapy)
    - "settings.py" this is where we uncomment pipeline or add user agents/proxies (automatically created by scrapy, needs modification)
 11) import the class from "items.py" into "spider.py"
 12) start coding in the required .py files
