@@ -13,11 +13,11 @@ Steps taken: (the step numbers are just there to provide the steps and don't hav
 7) cd into "centcompscraping" folder
 8) create spider.py "scrapy genspider spider centralcomputer.com" from terminal
 9) Folder and files to pay attention to:
-- "spiders" folder: our spider.py created earlier is located here
-- "items.py": temporarily stores extracted data (automatically created by scrapy, we need to create items here)
-- "pipelines.py" specifies where to store extracted data (automatically created by scrapy, add database info here if exporting extracted data to a database)
-- "middlewares.py" does something with the returned data or send other stuff along with the request (automatically created by scrapy, needs modification)
-- "settings.py" this is where we uncomment pipeline or add user agents/proxies (automatically created by scrapy, needs modification)
+   - "spiders" folder: our spider.py created earlier is located here
+   - "items.py": temporarily stores extracted data (automatically created by scrapy, we need to create items here)
+   - "pipelines.py" specifies where to store extracted data (automatically created by scrapy, add database info here if exporting extracted data to a database)
+   - "middlewares.py" does something with the returned data or send other stuff along with the request (automatically created by scrapy, needs modification)
+   - "settings.py" this is where we uncomment pipeline or add user agents/proxies (automatically created by scrapy, needs modification)
 10) import the class from "items.py" into "spider.py"
 11) start coding in the required .py files
 12) start crawling "scrapy crawl spider" from terminal
