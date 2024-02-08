@@ -23,7 +23,7 @@ Steps taken: (the steps are not strictly in order)
 10) wghen done, start crawling "scrapy crawl spider" from terminal
 11) if it doesn't work, test it in scrapy shell by entering "scrapy shell" from terminal:
     - fetch the website and verify success/error codes:
-         - ```>>> fetch('https://www.centralcomputer.com/all-products/computers/laptops/laptops.html?p=1')```
+         - ```fetch('https://www.centralcomputer.com/all-products/computers/laptops/laptops.html?p=1')```
     - verify the response's values:
          - ```response.css('a.product-item-link::text').extract()```
 12) try crawling again and export extracted data as a .json file "scrapy crawl spider -o laptops.json" from terminal
