@@ -1,5 +1,7 @@
 # Python Amazon Scraping With Scrapy
 
+This project was created and executed on Windows.
+
 Steps taken: (the step numbers are just there to provide the steps and don't have to be completed in order)
 
 1) create an empty folder and cd into it 
