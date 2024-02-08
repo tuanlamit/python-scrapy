@@ -28,7 +28,7 @@ This project was created and executed on Windows.
          - ```response.css('a.product-item-link::text').extract()```
 12) try crawling again and export extracted data as a .json file "scrapy crawl spider -o laptops.json" from terminal
 
-Additional steps if exporting extracted data into a local MySQL database:
+**Additional steps if exporting extracted data into a local MySQL database:**
 1) uncomment ITEM_PIPELINES in "settings.py, the default number 300 in ITEM_PIPELINES is the priority, lower number = higher priority
 2) install mysql connector "pip install mysql-connector-python" from terminal
 3) download and set up a local MySQL database then create a schema
@@ -36,7 +36,7 @@ Additional steps if exporting extracted data into a local MySQL database:
 5) then in "pipeline.py", define methods to manipulate the database using SQL statements
 6) entering "scrapy crawl spider -o laptops.json" from the terminal, and data will both be exported as a .json file + imported into MySQL
 
-Optional:
+**Optional:**
 1) install selector gadget for chrome
 2) Set logs level to display output for only warnings from terminal:
 
@@ -64,7 +64,7 @@ Optional:
 >
 > `response.css("a").xpath("@href").extract()`
 
-Working Directory & Result:
+**Working Directory & Result:**
 
 ![wd](https://github.com/tuanlamit/python-scrapy/assets/128099142/a56e08b0-4089-49a6-8993-af961b1b03b2)
 
