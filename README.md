@@ -24,12 +24,12 @@ Steps taken: (the step numbers are just there to provide the steps and don't hav
 13) start crawling "scrapy crawl spider" from terminal
 14) if it doesn't work, test it in scrapy shell by entering "scrapy shell" from terminal:
    - fetch the website and verify success/error codes:
-   - ```>>> fetch('https://www.centralcomputer.com/all-products/computers/laptops/laptops.html?p=1')`
-2024-02-08 09:21:04 [scrapy.core.engine] INFO: Spider opened
-2024-02-08 09:21:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.centralcomputer.com/robots.txt> (referer: None)
-2024-02-08 09:21:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.centralcomputer.com/all-products/computers/laptops/laptops.html?p=1> (referer: None)```
+        - ```>>> fetch('https://www.centralcomputer.com/all-products/computers/laptops/laptops.html?p=1')```
+        - ```2024-02-08 09:21:04 [scrapy.core.engine] INFO: Spider opened```
+        - ```2024-02-08 09:21:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.centralcomputer.com/robots.txt> (referer: None)```
+        - ```2024-02-08 09:21:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.centralcomputer.com/all-products/computers/laptops/laptops.html?p=1> (referer: None)```
    - verify the response's values:
-   - ```response.css('a.product-item-link::text').extract()```
+        - ```response.css('a.product-item-link::text').extract()```
 15) try crawling again "scrapy crawl spider" from terminal then extract to .json file
 16) uncomment ITEM_PIPELINES in "settings.py, the default number 300 in ITEM_PIPELINES is the priority, lower number = higher priority
 17) enter "pip install mysql-connector-python" from terminal 
