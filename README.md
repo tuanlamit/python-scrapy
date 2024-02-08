@@ -33,5 +33,34 @@ Steps taken: (the step numbers are just there to provide the steps and don't hav
 Optional:
 install selector gadget for chrome
 
+> [!NOTE]
+>
+> For css selector:
+> 
+> ```response.css('title::text')[0].extract()```
+>
+> is similar to:
+>
+> ```response.css('title::text').extract_first()```
+>
+> but extract_first() is usually preferred so there will be no error if result is empty
+
+> [!NOTE]
+> 
+> To extract href=/page/2/, combine css and xpath to make it simpler:
+>
+> `response.css("li.next a").xpath("@href").extract()`
+> 
+> to extract all href:
+>
+> `response.css("a").xpath("@href").extract()`
+
+Working Directory & Result:
+
+![wd](https://github.com/tuanlamit/python-scrapy/assets/128099142/a56e08b0-4089-49a6-8993-af961b1b03b2)
+
+![js](https://github.com/tuanlamit/python-scrapy/assets/128099142/80e91799-6395-416f-bf1e-3ce1ec31f675)
+
+![db](https://github.com/tuanlamit/python-scrapy/assets/128099142/54c00278-3705-4306-932a-a86d543f4589)
 
 
