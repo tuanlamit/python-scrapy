@@ -31,9 +31,9 @@ Steps taken: (the step numbers are just there to provide the steps and don't hav
 
 Additional steps if exporting extracted data into a local MySQL database:
 1) uncomment ITEM_PIPELINES in "settings.py, the default number 300 in ITEM_PIPELINES is the priority, lower number = higher priority
-2) enter "pip install mysql-connector-python" from terminal
+2) install mysql connector "pip install mysql-connector-python" from terminal
 3) download and set up a local MySQL database then create a schema
-4) in "pipeline.py", import mysql.connector (if not using mysql, you could use the built-in sqlite3)
+4) import mysql connector into "pipeline.py" (if not using mysql, you could use the built-in sqlite3)
 5) then in "pipeline.py", define methods to manipulate the database using SQL statements
 6) entering "scrapy crawl spider -o laptops.json" from the terminal, and data will both be exported as a .json file + imported into MySQL
 
